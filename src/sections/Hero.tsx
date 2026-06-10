@@ -10,11 +10,10 @@ export const Hero: React.FC = () => {
   const [isDeleting, setIsDeleting] = useState(false);
 
   const phrases = [
-    'React Developer',
-    'iOS Developer',
-    'AI Innovator',
-    'Product Builder',
-    'Entrepreneur',
+    'Full Stack Developer',
+    'Cybersecurity Enthusiast',
+    'Startup Builder',
+    'React & Node Specialist',
   ];
 
   // Mouse move glow effect
@@ -66,10 +65,10 @@ export const Hero: React.FC = () => {
   }, [charIdx, isDeleting, phraseIdx]);
 
   const stats = [
-    { label: 'Projects Built', value: '15+' },
-    { label: 'GitHub Repos', value: '42+' },
-    { label: 'Awards Won', value: '5+' },
-    { label: 'Tech Stack', value: '20+' },
+    { label: 'Projects Built', value: '10+' },
+    { label: 'GitHub Repos', value: '25+' },
+    { label: 'Certifications', value: '5' },
+    { label: 'Startup Ventures', value: '2' },
   ];
 
   const scrollToSection = (id: string) => {
@@ -112,7 +111,7 @@ export const Hero: React.FC = () => {
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full border border-white/5 bg-white/5 text-xs text-[#00D4FF] font-semibold w-fit mb-6"
           >
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Cybersecurity student &amp; Full Stack Developer</span>
+            <span>Full Stack Developer | Cybersecurity Enthusiast | Startup Builder</span>
           </motion.div>
 
           <motion.h1
@@ -121,8 +120,8 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold font-heading leading-tight tracking-tight text-white mb-6"
           >
-            Building Products That <br />
-            <span className="text-gradient">Create Real Impact</span>
+            Pratheek Madupu <br />
+            <span className="text-gradient">Building Secure Products</span>
           </motion.h1>
 
           <motion.p
@@ -131,7 +130,7 @@ export const Hero: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-[#86868B] text-lg sm:text-xl font-body max-w-xl mb-4"
           >
-            Full Stack Developer • iOS Developer • Cybersecurity Enthusiast • Startup Builder
+            Based in Hyderabad, India • Crafting full-stack web solutions, securing application layers, and launching impactful startups.
           </motion.p>
 
           <motion.div
@@ -173,11 +172,11 @@ export const Hero: React.FC = () => {
             </a>
 
             <button
-              onClick={() => alert('Mock Resume Download: Portfolio resume loaded successfully.')}
+              onClick={() => window.open('https://github.com/pratheekmadupu', '_blank')}
               className="px-6 py-3.5 rounded-full border border-white/5 text-white/80 hover:text-white font-semibold font-accent text-sm flex items-center gap-2 transition-all cursor-pointer"
             >
               <Download className="w-4 h-4 text-[#00D4FF]" />
-              <span>Download Resume</span>
+              <span>Visit GitHub Profile</span>
             </button>
           </motion.div>
 

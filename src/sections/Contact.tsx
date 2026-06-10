@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Send, Sparkles } from 'lucide-react';
+import { Mail, Send, Sparkles, Phone } from 'lucide-react';
 
 export const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -87,7 +87,7 @@ export const Contact: React.FC = () => {
           {/* Social Links Cards */}
           <div className="flex flex-col gap-4">
             <a
-              href="mailto:pratheekmadupu@gmail.com"
+              href="mailto:pratheekmadupu2006@gmail.com"
               className="glassmorphism p-4 rounded-xl border-white/5 hover:border-white/10 flex items-center gap-4 group transition-colors cursor-pointer"
             >
               <div className="p-2.5 rounded-lg bg-white/5 border border-white/5 text-[#00D4FF]">
@@ -95,12 +95,25 @@ export const Contact: React.FC = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-[10px] uppercase font-bold text-[#86868B] tracking-wider">Email Direct</span>
-                <span className="text-sm font-semibold text-white group-hover:text-[#00D4FF] transition-colors">pratheekmadupu@gmail.com</span>
+                <span className="text-sm font-semibold text-white group-hover:text-[#00D4FF] transition-colors">pratheekmadupu2006@gmail.com</span>
               </div>
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="tel:+917075209102"
+              className="glassmorphism p-4 rounded-xl border-white/5 hover:border-white/10 flex items-center gap-4 group transition-colors cursor-pointer"
+            >
+              <div className="p-2.5 rounded-lg bg-white/5 border border-white/5 text-[#FF3366]">
+                <Phone className="w-5 h-5" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-[10px] uppercase font-bold text-[#86868B] tracking-wider">Call Directly</span>
+                <span className="text-sm font-semibold text-white group-hover:text-[#FF3366] transition-colors">+91 70752 09102</span>
+              </div>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/pratheek-madupu-b872b6335/"
               target="_blank"
               rel="noreferrer"
               className="glassmorphism p-4 rounded-xl border-white/5 hover:border-white/10 flex items-center gap-4 group transition-colors cursor-pointer"
@@ -114,12 +127,12 @@ export const Contact: React.FC = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-[10px] uppercase font-bold text-[#86868B] tracking-wider">Professional Network</span>
-                <span className="text-sm font-semibold text-white group-hover:text-[#7B61FF] transition-colors">linkedin.com/in/pratheek-madupu</span>
+                <span className="text-sm font-semibold text-white group-hover:text-[#7B61FF] transition-colors">pratheek-madupu-b872b6335</span>
               </div>
             </a>
 
             <a
-              href="https://github.com"
+              href="https://github.com/pratheekmadupu"
               target="_blank"
               rel="noreferrer"
               className="glassmorphism p-4 rounded-xl border-white/5 hover:border-white/10 flex items-center gap-4 group transition-colors cursor-pointer"
@@ -132,7 +145,7 @@ export const Contact: React.FC = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-[10px] uppercase font-bold text-[#86868B] tracking-wider">Open Source Codes</span>
-                <span className="text-sm font-semibold text-white group-hover:text-[#00FFC6] transition-colors">github.com/pratheek-madupu</span>
+                <span className="text-sm font-semibold text-white group-hover:text-[#00FFC6] transition-colors">github.com/pratheekmadupu</span>
               </div>
             </a>
           </div>

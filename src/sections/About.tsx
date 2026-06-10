@@ -83,7 +83,7 @@ export const About: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="text-[#86868B] max-w-xl mx-auto text-base sm:text-lg"
           >
-            Combining strict system-level security, clean React architectures, and product strategy to design high-performance digital ecosystems.
+            Showcasing my freelance experience, startup ventures, cybersecurity projects, IoT expertise, and full-stack development skills in an engaging and interactive way.
           </motion.p>
         </div>
 
