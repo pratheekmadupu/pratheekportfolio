@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #050505;
+  --bg-secondary: #0B0B0B;
+  --bg-tertiary: #121214;
+  --card-bg: rgba(15, 15, 20, 0.6);
+  --card-border: rgba(255, 255, 255, 0.05);
+  
+  --accent-blue: #00D4FF;
+  --accent-purple: #7B61FF;
+  --accent-cyan: #00FFC6;
+  
+  --text-primary: #F5F5F7;
+  --text-secondary: #86868B;
+  
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-accent: 'Poppins', sans-serif;
+}
+
+/* Base resets & customization */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--bg-primary);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+  border: 1px solid var(--bg-primary);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #222;
+}
+
+/* Utility Animations */
+.glassmorphism {
+  background: rgba(15, 15, 20, 0.6);
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #00D4FF 0%, #7B61FF 50%, #00FFC6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Custom cursor and scroll progress */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--accent-blue);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+.custom-cursor-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--accent-cyan);
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Hide cursor on touchscreen devices */
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor, .custom-cursor-dot {
+    display: none !important;
+  }
+}
+
+/* Tech Universe Orbits & Animations */
+:root {
+  --radius-1: 110px;
+  --radius-2: 180px;
+  --radius-3: 250px;
+  --radius-4: 320px;
+  --radius-5: 390px;
+  --radius-6: 460px;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --radius-1: 80px;
+    --radius-2: 130px;
+    --radius-3: 180px;
+    --radius-4: 230px;
+    --radius-5: 280px;
+    --radius-6: 330px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --radius-1: 60px;
+    --radius-2: 95px;
+    --radius-3: 130px;
+    --radius-4: 165px;
+    --radius-5: 200px;
+    --radius-6: 235px;
+  }
+}
+
+.orbit-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px dashed rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  pointer-events: none;
+  transition: border-color 0.5s ease;
+  z-index: 1;
+}
+
+.orbit-item {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: center;
+  z-index: 10;
+  animation: orbit-rotate var(--speed) linear infinite;
+  animation-play-state: var(--play-state, running);
+  will-change: transform;
+}
+
+@keyframes orbit-rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(var(--start-angle)) rotate(0deg) translate(var(--orbit-radius)) rotate(calc(-1 * (var(--start-angle) + 0deg)));
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(var(--start-angle)) rotate(360deg) translate(var(--orbit-radius)) rotate(calc(-1 * (var(--start-angle) + 360deg)));
+  }
+}
+
+/* Floating effect for center card */
+.floating-element {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
