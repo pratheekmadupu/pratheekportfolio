@@ -33,7 +33,7 @@ export const Projects: React.FC = () => {
       subtitle: 'Emergency Response Startup',
       description: 'An emergency response platform designed to bridge communication lags in critical road accidents. Scans geolocate crash sites and load encrypted health data cards for emergency responders.',
       techStack: ['Startup Strategy', 'Encrypted Profiles', 'Geolocation Tracing', 'Market Validation'],
-      github: 'https://github.com',
+      github: 'https://github.com/pratheekmadupu/emergency-qr',
       color: '#00D4FF',
       visualMockup: (
         <div className="w-full h-full flex flex-col justify-between p-5 bg-[#00D4FF]/3 border border-[#00D4FF]/10 rounded-xl">
@@ -57,7 +57,7 @@ export const Projects: React.FC = () => {
       subtitle: 'Nutrition E-Commerce Platform',
       description: 'A full-stack nutrition platform equipped with secure roles authorization, dynamic catalogs, item search pathways, shopping cart calculators, and transaction records.',
       techStack: ['ReactJS', 'NodeJS', 'MongoDB', 'ExpressJS'],
-      github: 'https://github.com',
+      github: 'https://github.com/pratheekmadupu/LOGI',
       color: '#7B61FF',
       visualMockup: (
         <div className="w-full h-full flex flex-col justify-between p-5 bg-[#7B61FF]/3 border border-[#7B61FF]/10 rounded-xl">
@@ -84,7 +84,7 @@ export const Projects: React.FC = () => {
       subtitle: 'Financial Management System',
       description: 'An advanced analytics platform constructed to calculate wealth growth charts, track expenditures, compile budgets, and integrate multi-currency calculation pipelines.',
       techStack: ['ReactJS', 'Finance APIs', 'TailwindCSS', 'ChartJS'],
-      github: 'https://github.com',
+      github: 'https://github.com/pratheekmadupu/finrl',
       color: '#00FFC6',
       visualMockup: (
         <div className="w-full h-full flex flex-col justify-between p-5 bg-[#00FFC6]/3 border border-[#00FFC6]/10 rounded-xl">
@@ -110,7 +110,7 @@ export const Projects: React.FC = () => {
       subtitle: 'E-commerce Platform',
       description: 'A multi-version release e-commerce system featuring containerized microservices, indexing optimizations, advanced inventory catalogs, search paths, and dashboard analytics.',
       techStack: ['NextJS', 'PostgreSQL', 'Docker', 'Redis'],
-      github: 'https://github.com',
+      github: 'https://github.com/pratheekmadupu/eshop',
       color: '#00D4FF',
       visualMockup: (
         <div className="w-full h-full flex flex-col justify-between p-5 bg-[#00D4FF]/3 border border-[#00D4FF]/10 rounded-xl">
@@ -133,7 +133,7 @@ export const Projects: React.FC = () => {
       subtitle: 'IoT Project',
       description: 'An internet-guided robotics framework communicating over serial lines, enabling user GUI inputs to control motor speed, steering, and sensor logs via Arduino firmware.',
       techStack: ['Arduino', 'Embedded C', 'Serial Protocols', 'Robotics'],
-      github: 'https://github.com',
+      github: 'https://github.com/pratheekmadupu',
       color: '#7B61FF',
       visualMockup: (
         <div className="w-full h-full flex flex-col justify-between p-5 bg-[#7B61FF]/3 border border-[#7B61FF]/10 rounded-xl">
